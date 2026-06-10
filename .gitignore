@@ -1,2 +1,3 @@
 node_modules/
-build/
+# Keep build out of gitignore so it gets published
+# build/

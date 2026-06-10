@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "test-architect-mcp",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,11 @@
     "@types/node": "^25.9.2",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
-  }
+  },
+  "bin": {
+    "test-architect-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ]
 }
